@@ -1,17 +1,27 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+/****************************************************************
+**                                                             **                                                             
+**                       titulo :                              **                                                             
+**                       BLINK                                 **
+**                                                             ** 
+**    NOM : ABDELLAZIZ AARAB          DATA : xx/xx/2017        **                       
+****************************************************************/  
 
-# Custom for Visual Studio
-*.cs     diff=csharp
+//********** Setup ****************************************************************
+void setup()
+{/ / Inicialice la señal digital como una salida.
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+/ / pin 13 LED
+
+pinMode(13, OUTPUT) ; pin13 salida
+}
+
+//********** Loop *****************************************************************
+void loop()
+{
+digitalWrite(13, HIGH) ; / / LED encendido
+delay( 1000) ; / / espera un segundo
+digitalWrite( 13, LOW) ; / / LED apagado
+delay( 1000) ; espera un segundo
+}
+
+//********** Funcions *************************************************************
